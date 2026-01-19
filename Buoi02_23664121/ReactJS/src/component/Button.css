@@ -1,0 +1,28 @@
+.primary {
+    background-color: blue;
+    color: white;
+}
+.primary:hover {
+    background-color: darkblue;
+}
+.danger {
+    background-color: red;
+    color: white;
+}
+.danger:hover {
+    background-color: darkred;
+}
+.success {
+    background-color: green;
+    color: white;
+}
+.success:hover {
+    background-color: darkgreen;
+}
+Button {
+    padding: 10px 20px;
+    width: 500px;
+    height: 300px;
+    font-size: 48px;
+    border: 2px solid #000000;
+}
