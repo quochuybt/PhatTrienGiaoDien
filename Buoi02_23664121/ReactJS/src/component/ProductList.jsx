@@ -10,7 +10,7 @@ function ProductList() {
   { id: 6, name: 'Product 6', price: '$25' },
 ];
   return (
-    <div className="container">
+    <div className="product-container">
       <h1>Product List</h1>
       <div className="product-grid">
         {products.map(product => (
