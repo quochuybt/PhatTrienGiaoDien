@@ -1,25 +1,32 @@
-.primary {
+button.primary {
     background-color: blue;
     color: white;
 }
-.primary:hover {
+button.primary:hover {
     background-color: darkblue;
 }
-.danger {
+button.warning {
+    background-color: orange;
+    color: white;
+}
+button.warning:hover {
+    background-color: darkorange;
+}
+button.danger, button.error {
     background-color: red;
     color: white;
 }
-.danger:hover {
+button.danger:hover, button.error:hover {
     background-color: darkred;
 }
-.success {
+button.success {
     background-color: green;
     color: white;
 }
-.success:hover {
+button.success:hover {
     background-color: darkgreen;
 }
-Button {
+.btn {
     padding: 10px 20px;
     width: 500px;
     height: 300px;

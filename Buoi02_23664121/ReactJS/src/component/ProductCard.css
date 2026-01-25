@@ -1,0 +1,28 @@
+#product-card {
+    border-radius: 10px;
+}
+
+#product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#product-card-container:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+ #product-card-container{
+    color: black;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+ }
+#product-card-container button {
+    width: 100%;
+}

@@ -2,9 +2,9 @@ import React from 'react'
 import './Button.css'
 function Button(props) {
   return (
-    <div>
-        <button className={props.type}>{props.children}</button>
-    </div>
+    <>
+        <button className={`btn ${props.type}`} onClick={props.onClick}>{props.children}</button>
+    </>
   )
 }
 
