@@ -1,0 +1,46 @@
+.status-group {
+    margin-top: 36px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.status-container {
+    text-align: center;
+    margin: 300px;
+}
+.btn-status {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-status:hover {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-online {
+    background-color: green;
+    color: white;
+    border: none;
+}
+.btn-online:hover {
+    background-color: darkgreen;
+}
+.btn-offline {
+    background-color: gray;
+    color: white;
+    border: none;
+}
+.btn-offline:hover {
+    background-color: darkgray;
+}
+.btn-busy {
+    background-color: red;
+    color: white;
+    border: none;
+}
+.btn-busy:hover {
+    background-color: darkred;
+}
