@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AsyncUsers = () => {
+const AsyncAwaitUsers = () => {
   const [users, setUsers] = useState([]);
 
   const loadWithAsync = async () => {
@@ -24,4 +24,4 @@ const AsyncUsers = () => {
   );
 };
 
-export default AsyncUsers;
+export default AsyncAwaitUsers;
