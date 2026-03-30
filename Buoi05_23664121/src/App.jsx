@@ -1,5 +1,7 @@
 import DynamicRoute from "./components/DynamicRoute";
 import HelloRouter from "./components/HelloRouter";
+import Navigation from "./components/Navigation";
+import Navigate from "./components/Navigation";
 import NestedRoutes from "./components/NestedRoutes";
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
       {/* Bài 4 */}
       {/* <NestedRoutes /> */}
       {/* Bài 5 */}
+      <Navigation />
     </>
   );
 }
