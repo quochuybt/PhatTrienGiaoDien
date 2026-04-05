@@ -14,7 +14,10 @@ function App() {
       {/* Bài 4 */}
       {/* <NestedRoutes /> */}
       {/* Bài 5 */}
-      <Navigation />
+      {/* <Navigation /> */}
+      {/* Bài 6 */}
+
+      {/* Bài 7 */}
     </>
   );
 }
