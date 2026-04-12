@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRecoilState } from "recoil";
-import { UserAtom } from "../recoil/UserAtom";
 import { useNavigate } from "react-router-dom";
+import { UserAtom } from "../../recoil/UserAtom";
 
 const LoginComponent = () => {
   const [user, setUser] = useRecoilState(UserAtom);

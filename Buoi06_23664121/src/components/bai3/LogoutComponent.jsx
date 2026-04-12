@@ -1,6 +1,6 @@
 import React from "react";
 import { useRecoilState } from "recoil";
-import { UserAtom } from "../recoil/UserAtom";
+import { UserAtom } from "../../recoil/UserAtom";
 import { useNavigate } from "react-router-dom";
 
 const LogoutComponent = () => {
