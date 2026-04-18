@@ -8,6 +8,7 @@ import Bai5 from "./components/bai5/Bai5";
 import Cart from "./components/bai5/Cart";
 import ListProduct from "./components/bai5/ListProduct";
 import Bai6 from "./components/bai6/Bai6";
+import Bai7 from "./components/bai7/Bai7";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <Bai4 /> */}
       {/* <Test /> */}
       {/* <Bai5 /> */}
-      <Bai6 />
+      {/* <Bai6 /> */}
+      <Bai7 />
     </>
   );
 }
