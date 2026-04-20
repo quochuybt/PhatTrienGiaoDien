@@ -1,0 +1,202 @@
+/* ============================================
+   WelcomeModal — pixel-perfect Figma spec
+   Overlay: 1440×900  |  Modal: 824×811
+   Primary: #F44B87   Background: white
+   ============================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Manrope:wght@400;600&display=swap");
+
+/* ---------- Overlay ---------- */
+.wm-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #171a1f66; /* neutral-900 @ 40% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: wm-fadeIn 0.25s ease;
+}
+
+@keyframes wm-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ---------- Modal container ---------- */
+.wm-container {
+  position: relative;
+  width: 824px;
+  height: 811px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px #171a1f26, 0px 0px 2px #171a1f33;
+  animation: wm-slideUp 0.3s cubic-bezier(0.34, 1.2, 0.64, 1);
+  overflow: hidden;
+}
+
+@keyframes wm-slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* ---------- Close button ---------- */
+.wm-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  color: #9095a0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s, color 0.15s;
+}
+.wm-close:hover {
+  background: #fddce8;
+  color: #f44b87;
+}
+
+/* ---------- Title  (top: 64, left: 245 → centred) ---------- */
+.wm-title {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #f44b87;
+  margin: 0;
+}
+
+/* ---------- Subtitle (top: 136) ---------- */
+.wm-subtitle {
+  position: absolute;
+  top: 136px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #171a1f;
+  margin: 0;
+  padding: 0 185px; /* mirrors left: 185 offset */
+}
+
+/* ---------- Image (top:182, left:25, 775×423) ---------- */
+.wm-image {
+  position: absolute;
+  top: 182px;
+  left: 25px;
+  width: 775px;
+  height: 423px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* ---------- Dot indicators (group top:621) ---------- */
+.wm-dots {
+  position: absolute;
+  top: 621px;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.wm-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #e0e2e7;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.wm-dot--active {
+  background: #f44b87;
+  transform: scale(1.15);
+}
+
+.wm-dot:hover:not(.wm-dot--active) {
+  background: #fddce8;
+}
+
+/* ---------- Next button (top:671, left:231, 362×44) ---------- */
+.wm-btn-next {
+  position: absolute;
+  top: 671px;
+  left: 231px;
+  width: 362px;
+  height: 44px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ffffff;
+  background: #f44b87;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+.wm-btn-next:hover {
+  background: #e83878;
+  box-shadow: 0 4px 14px #f44b8740;
+}
+.wm-btn-next:active {
+  transform: scale(0.98);
+}
+.wm-btn-next:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ---------- Skip button (top:731, left:231, 362×48) ---------- */
+.wm-btn-skip {
+  position: absolute;
+  top: 731px;
+  left: 231px;
+  width: 362px;
+  height: 48px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #f44b87;
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.wm-btn-skip:hover {
+  background: #fddce8;
+  color: #f44b87;
+}

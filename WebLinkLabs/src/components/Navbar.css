@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Manrope:wght@400;500;600&display=swap");
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  height: 64px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 40px;
+  box-shadow: 0 1px 0 #e5e7eb;
+}
+
+/* Logo */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.navbar__logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__logo-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f44b87;
+  letter-spacing: -0.3px;
+}
+
+/* Search */
+.navbar__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 8px 14px;
+  min-width: 220px;
+  flex: 1;
+  max-width: 320px;
+}
+
+.navbar__search-icon {
+  flex-shrink: 0;
+}
+
+.navbar__search-input {
+  border: none;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #171a1f;
+  width: 100%;
+  outline: none;
+}
+
+.navbar__search-input::placeholder {
+  color: #9095a0;
+}
+
+/* Nav Links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.navbar__link {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #171a1f;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.navbar__link:hover {
+  background: #fddce8;
+  color: #f44b87;
+}
+
+/* Actions */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.navbar__btn-login {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f44b87;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.15s;
+}
+
+.navbar__btn-login:hover {
+  background: #fddce8;
+}
+
+.navbar__btn-subscribe {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #f44b87;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+
+.navbar__btn-subscribe:hover {
+  background: #e83878;
+  box-shadow: 0 4px 14px #f44b8740;
+}
