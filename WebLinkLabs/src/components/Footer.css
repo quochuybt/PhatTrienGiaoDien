@@ -1,0 +1,138 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: #1d2026;
+  color: #fff;
+  padding: 48px 0 0;
+  margin-top: auto;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px 40px;
+}
+
+/* Column headings */
+.footer__heading {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+.footer__heading--mt { margin-top: 28px; }
+
+/* About text */
+.footer__about-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #9095a0;
+  margin-bottom: 18px;
+}
+
+/* Email subscribe */
+.footer__subscribe {
+  display: flex;
+  gap: 8px;
+}
+.footer__email-input {
+  flex: 1;
+  height: 36px;
+  padding: 0 12px;
+  background: #2a2e37;
+  border: 1px solid #3a3f4b;
+  border-radius: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.footer__email-input::placeholder { color: #565d6d; }
+.footer__email-input:focus { border-color: #f44b87; }
+
+.footer__send-btn {
+  height: 36px;
+  padding: 0 16px;
+  background: #f44b87;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.footer__send-btn:hover { background: #e83878; }
+
+/* Links */
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.footer__link {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #9095a0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer__link:hover { color: #f44b87; }
+
+/* Bottom bar */
+.footer__bottom {
+  border-top: 1px solid #2a2e37;
+  padding: 16px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__bottom-logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.footer__bottom-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #f44b87;
+}
+
+.footer__copy {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #565d6d;
+}
+
+.footer__legal {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer__legal-link {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #9095a0;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.footer__legal-link:hover { color: #f44b87; }
+.footer__legal-sep {
+  color: #3a3f4b;
+  font-size: 12px;
+}

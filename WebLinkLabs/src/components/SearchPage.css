@@ -1,0 +1,29 @@
+/* ===== SEARCH PAGE ===== */
+.sp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f8fa;
+}
+
+.sp__body {
+  display: flex;
+  gap: 24px;
+  padding: 28px 40px;
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.sp__main {
+  flex: 1;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 1px #171a1f1a, 0 2px 8px #171a1f0d;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 const NAV_LINKS = ["What to cook", "Recipes", "Ingredients", "Occasions", "About Us"];
 
-export default function Navbar() {
+export default function Navbar({ onLoginClick }) {
   return (
     <nav className="navbar">
       {/* Logo */}
@@ -42,7 +42,13 @@ export default function Navbar() {
 
       {/* Actions */}
       <div className="navbar__actions">
-        <a href="#" className="navbar__btn-login">Login</a>
+        <button
+          className="navbar__btn-login"
+          onClick={onLoginClick}
+          id="navbar-login-btn"
+        >
+          Login
+        </button>
         <a href="#" className="navbar__btn-subscribe">Subscribe</a>
       </div>
     </nav>

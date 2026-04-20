@@ -1,0 +1,260 @@
+/* ===== RECIPE BOX PAGE ===== */
+.rbp {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f7f8fa;
+}
+
+.rbp__inner {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 40px 48px;
+}
+
+/* ── Breadcrumb ── */
+.rbp__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+.rbp__bc-link {
+  color: #565d6d;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.rbp__bc-link:hover { color: #f44b87; }
+.rbp__bc-sep { color: #9095a0; font-size: 14px; }
+.rbp__bc-current {
+  color: #f44b87;
+  font-weight: 600;
+}
+
+/* ── Profile header ── */
+.rbp__profile {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 0 1px #171a1f1a, 0 2px 8px #171a1f0a;
+}
+
+.rbp__avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 3px solid #fddce8;
+}
+.rbp__avatar svg { width: 100%; height: 100%; }
+
+.rbp__profile-info { flex: 1; }
+
+.rbp__name {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #171a1f;
+  margin-bottom: 10px;
+}
+
+.rbp__bio {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #565d6d;
+  margin-bottom: 14px;
+  max-width: 700px;
+}
+
+.rbp__meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.rbp__subscribers {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f44b87;
+  text-decoration: none;
+}
+.rbp__subscribers:hover { text-decoration: underline; }
+
+.rbp__share-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: #f44b87;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s;
+}
+.rbp__share-btn:hover {
+  background: #e83878;
+  box-shadow: 0 4px 12px #f44b8740;
+}
+
+/* ── Tabs ── */
+.rbp__tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 24px;
+}
+
+.rbp__tab {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #565d6d;
+  background: transparent;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.rbp__tab:hover { color: #f44b87; }
+.rbp__tab--active {
+  color: #f44b87;
+  border-bottom-color: #f44b87;
+  font-weight: 700;
+}
+
+/* ── Recipe grid (4 columns) ── */
+.rbp__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.rbp__card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 1px #171a1f1a, 0 2px 8px #171a1f0a;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.rbp__card:hover {
+  box-shadow: 0 8px 24px #171a1f18;
+  transform: translateY(-2px);
+}
+
+.rbp__card-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.rbp__card-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+.rbp__card:hover .rbp__card-img {
+  transform: scale(1.04);
+}
+
+.rbp__bookmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.15s, transform 0.15s;
+}
+.rbp__bookmark:hover { background: #fddce8; transform: scale(1.1); }
+.rbp__bookmark--saved { background: #fddce8; }
+
+.rbp__card-body {
+  padding: 12px 14px 14px;
+}
+.rbp__card-title {
+  font-family: "Manrope", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #171a1f;
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+.rbp__card-time {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  color: #f44b87;
+  font-weight: 500;
+}
+
+/* ── Pagination ── */
+.rbp__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.rbp__page-btn {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #565d6d;
+  background: #fff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.rbp__page-btn:hover:not(:disabled) {
+  border-color: #f44b87;
+  color: #f44b87;
+  background: #fddce8;
+}
+.rbp__page-btn--active {
+  background: #f44b87;
+  border-color: #f44b87;
+  color: #fff;
+  font-weight: 700;
+}
+.rbp__page-btn--nav {
+  font-size: 16px;
+  color: #9095a0;
+}
+.rbp__page-btn--dots {
+  border: none;
+  background: transparent;
+  cursor: default;
+  color: #9095a0;
+}
+.rbp__page-btn:disabled { cursor: default; }

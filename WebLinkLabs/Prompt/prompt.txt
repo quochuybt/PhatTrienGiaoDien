@@ -1,0 +1,152 @@
+xây dựng giao diện như hình. với phần modal /* Container 160 */
+.container {
+  position: absolute; 
+  top: 45px; 
+  left: 308px; 
+  width: 824px; 
+  height: 811px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 12px; /* border-xl */
+  box-shadow: 0px 0px 1px #171a1f26, 0px 0px 2px #171a1f33; /* shadow-xs */
+}, text: .text {
+  position: absolute; 
+  top: 64px; 
+  left: 245px; 
+  font-family: Poppins; /* Heading */
+  font-size: 40px; 
+  line-height: 56px; 
+  font-weight: 700; 
+  color: #F44B87FF; /* primary-500 */
+},.text {
+  position: absolute; 
+  top: 136px; 
+  left: 185px; 
+  font-family: Manrope; /* Body */
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #171A1FFF; /* neutral-900 */
+},/* Image 93 */
+.image {
+  position: absolute; 
+  top: 182px; 
+  left: 25px; 
+  width: 775px; 
+  height: 423px; 
+  border-radius: 12px; /* border-xl */
+}/* Group 11 */
+.group {
+  position: absolute; 
+  top: 621px; 
+  left: 388px; 
+  width: 48px; 
+  height: 12px; 
+}/* Button 58 */
+.button {
+  position: absolute; 
+  top: 671px; 
+  left: 231px; 
+  width: 362px; 
+  height: 44px; 
+  padding: 0 16px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Manrope; 
+  font-size: 16px; 
+  line-height: 26px; 
+  font-weight: 400; 
+  color: #FFFFFFFF; /* white */
+  background: #F44B87FF; /* primary-500 */
+  opacity: 1; 
+  border: none; 
+  border-radius: 12px; /* border-xl */
+}
+/* Hover */
+.button:hover {
+  color: #FFFFFFFF; /* white */
+  background: #F44B87FF; /* primary-500 */
+}
+/* Pressed */
+.button:hover:active {
+  color: #FFFFFFFF; /* white */
+  background: #F44B87FF; /* primary-500 */
+}
+/* Disabled */
+.button:disabled {
+  opacity: 0.4; 
+}/* Button 59 */
+.button {
+  position: absolute; 
+  top: 731px; 
+  left: 231px; 
+  width: 362px; 
+  height: 48px; 
+  padding: 0 12px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  font-family: Manrope; 
+  font-size: 14px; 
+  line-height: 22px; 
+  font-weight: 400; 
+  color: #F44B87FF; /* primary-500 */
+  background: #00000000; /* transparent */
+  opacity: 1; 
+  border: none; 
+  border-radius: 12px; /* border-xl */
+}
+/* Hover */
+.button:hover {
+  color: #F44B87FF; /* primary-500 */
+  background: #FDDCE8FF; /* primary-150 */
+}
+kích thước tổng:.overlay {
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  width: 1440px; 
+  height: 900px; 
+  background: #171A1F66; /* neutral-900 */
+  border-radius: 0px; 
+}
+
+Phân tích và code phần phía sau modal nữa
+
+Khi click vào login thì hiện trang này.
+/* Container 136 */
+.container {
+  position: absolute; 
+  top: 138px; 
+  left: 151px; 
+  width: 1139px; 
+  height: 624px; 
+  background: #FFFFFFFF; /* white */
+  border-radius: 12px; /* border-xl */
+  box-shadow: 0px 0px 1px #171a1f26, 0px 0px 2px #171a1f33; /* shadow-xs */
+}
+/* Image 72 */
+.image {
+  position: absolute; 
+  top: 1px; 
+  left: 0px; 
+  width: 501px; 
+  height: 624px; 
+  border-radius: 0px; 
+}
+.text {
+  position: absolute; 
+  top: 72px; 
+  left: 110px; 
+  width: 302px; 
+  height: 50px; 
+  font-family: Poppins; /* Heading */
+  font-size: 24px; 
+  line-height: 36px; 
+  font-weight: 700; 
+  color: #FFFFFFFF; /* white */
+}
+
+Khi click vào continue thì hiện trang này.
+
+khi bấm vào your recipe box sẽ hiện trang này.

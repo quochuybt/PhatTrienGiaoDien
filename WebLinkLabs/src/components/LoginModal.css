@@ -1,0 +1,247 @@
+/* ============================================
+   LoginModal — Figma spec
+   Overlay: 1440×900
+   Container: 1139×624  (top:138, left:151)
+   Left panel: 501×624   Right form: 638px
+   Primary: #F44B87
+   ============================================ */
+
+/* ---------- Overlay ---------- */
+.lm-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #171a1f66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: lm-fadeIn 0.22s ease;
+}
+
+@keyframes lm-fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ---------- Container (1139 × 624) ---------- */
+.lm-container {
+  display: flex;
+  width: 1139px;
+  height: 624px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px #171a1f26, 0px 0px 2px #171a1f33;
+  overflow: hidden;
+  animation: lm-slideUp 0.3s cubic-bezier(0.34, 1.15, 0.64, 1);
+}
+
+@keyframes lm-slideUp {
+  from { transform: translateY(32px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* ═══════════════════════════════════
+   LEFT PANEL  (501 × 624)
+═══════════════════════════════════ */
+.lm-panel {
+  position: relative;
+  width: 501px;
+  min-width: 501px;
+  height: 624px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.lm-panel__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Gradient overlay so quote text is readable */
+.lm-panel__gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(23, 26, 31, 0.18) 0%,
+    rgba(23, 26, 31, 0.55) 100%
+  );
+}
+
+/* Quote text  — top:72, left:110, width:302, Poppins 700 24px white */
+.lm-panel__quote {
+  position: absolute;
+  top: 72px;
+  left: 110px;
+  width: 302px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+/* ═══════════════════════════════════
+   RIGHT FORM AREA  (638px)
+═══════════════════════════════════ */
+.lm-form-wrap {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 72px;
+}
+
+/* Close button */
+.lm-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.15s;
+}
+.lm-close:hover {
+  background: #fddce8;
+}
+.lm-close:hover path {
+  stroke: #f44b87;
+}
+
+/* Title */
+.lm-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #171a1f;
+  margin-bottom: 6px;
+}
+
+/* Subtitle */
+.lm-subtitle {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #565d6d;
+  margin-bottom: 20px;
+}
+
+/* Email input */
+.lm-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  border: 1.5px solid #e0e2e7;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #171a1f;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+  margin-bottom: 16px;
+}
+.lm-input::placeholder { color: #9095a0; }
+.lm-input:focus {
+  border-color: #f44b87;
+  box-shadow: 0 0 0 3px #f44b8718;
+}
+
+/* Continue button */
+.lm-btn-continue {
+  width: 100%;
+  height: 44px;
+  background: #f44b87;
+  color: #ffffff;
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+  margin-bottom: 18px;
+}
+.lm-btn-continue:hover {
+  background: #e83878;
+  box-shadow: 0 4px 14px #f44b8740;
+}
+.lm-btn-continue:active { transform: scale(0.98); }
+
+/* OR divider */
+.lm-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.lm-divider__line {
+  flex: 1;
+  height: 1px;
+  background: #e0e2e7;
+}
+.lm-divider__text {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #9095a0;
+  letter-spacing: 0.5px;
+}
+
+/* Terms text */
+.lm-terms {
+  font-family: "Manrope", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  color: #9095a0;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.lm-terms a {
+  color: #f44b87;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Social buttons */
+.lm-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lm-social-btn {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1.5px solid #e0e2e7;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #171a1f;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.lm-social-btn:hover {
+  background: #fafafa;
+  border-color: #f44b87;
+  box-shadow: 0 2px 8px #f44b8720;
+}

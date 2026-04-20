@@ -1,0 +1,63 @@
+/* ===== EMPTY STATE ===== */
+.es {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.es__heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #171a1f;
+  margin-bottom: 32px;
+  line-height: 1.4;
+}
+
+.es__query {
+  color: #171a1f;
+}
+
+.es__illustration {
+  margin-bottom: 28px;
+  animation: es-bob 3s ease-in-out infinite;
+}
+
+@keyframes es-bob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+.es__subtext {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color: #565d6d;
+  margin-bottom: 20px;
+}
+
+.es__suggestions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.es__pill {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #f44b87;
+  border: 1.5px solid #f9a8c9;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 16px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.es__pill:hover {
+  background: #fddce8;
+  border-color: #f44b87;
+}

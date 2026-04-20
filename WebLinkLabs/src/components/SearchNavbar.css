@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Manrope:wght@400;500;600&display=swap");
+
+.snav {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 32px;
+  box-shadow: 0 1px 0 #e5e7eb;
+}
+
+/* Logo */
+.snav__logo {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.snav__logo-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f44b87;
+}
+
+/* Search */
+.snav__search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 7px 14px;
+  min-width: 240px;
+  max-width: 340px;
+  flex: 1;
+  border: 1.5px solid transparent;
+  transition: border-color 0.15s;
+}
+.snav__search:focus-within {
+  border-color: #f44b87;
+  background: #fff;
+}
+.snav__search-input {
+  border: none;
+  background: transparent;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #171a1f;
+  width: 100%;
+  outline: none;
+}
+.snav__search-input::placeholder { color: #9095a0; }
+
+/* Nav links */
+.snav__links {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+.snav__link {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #171a1f;
+  text-decoration: none;
+  padding: 5px 9px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.snav__link:hover { background: #fddce8; color: #f44b87; }
+
+/* Actions */
+.snav__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.snav__recipe-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f44b87;
+  background: transparent;
+  border: 1.5px solid #f44b87;
+  border-radius: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.snav__recipe-box:hover {
+  background: #fddce8;
+}
+
+.snav__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f44b87, #ff8ab4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: box-shadow 0.15s;
+}
+.snav__avatar:hover {
+  box-shadow: 0 0 0 3px #f44b8730;
+}
